@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.js' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body style="background-color:#C0C0C0;">
+<div class = "container">
+    <div class = "form-group">
+
+        {% if messages %}
+        <ul class="messages">
+        {% for message in messages %}
+
+        </li>
+            <h2><div class="alert alert-success">{{ message }}</div> </h2>
+        </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+<div class="col-md-5">
+        <form method="post">
+            {% csrf_token %} {{signup_form.as_p}}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+
+</body>
+
+</html>

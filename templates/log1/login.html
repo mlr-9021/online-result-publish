@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html lang="en">
+
+<head>
+
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.js' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+    <!-- Bootstrap CSS -->
+
+</head>
+
+<p>the is style</p>
+<body style="background-color:#FF00FF;">
+    <style>
+        body.ex1 {
+            margin-top: 60px;
+        }
+    </style>
+
+    <body class="ex1">
+        <div class="app flex-row align-items-center" ;>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card-group">
+                            <div class="card p-4">
+                                <div class="card-body">
+								
+					
+								
+					
+								 <h4><u style=" color: #C71585"> Online Result Publication</u><h4></ul>
+
+                                    <form action="" method="POST">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <strong></strong>
+                                            <label style="color:green;font-weight:bold;">Username</label>
+                                            </strong>
+                                            <input type="text" name="users" placeholder="Enter username">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label style="color:green;font-weight:bold;">Password</label>
+                                            <input type="password" name="pass" placeholder="Password">
+                                        </div>
+                                        <button style="color:green;font-weight:bold;" type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+
+                                </div>
+                                <p style="color:green;font-weight:bold;">Not Registered Yet ?? <a href="{% url 'signup' %}">Sign Up</a>
+                                </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </body>
+</body>
+
+</html>
+
+ {% endblock %}

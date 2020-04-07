@@ -1,0 +1,103 @@
+{% load static %}
+<div class="sidebar">
+    <nav class="sidebar-nav">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}"><i class="icon-speedometer"></i> Dashboard</a>
+            </li>
+
+             <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#">
+                <i class="nav-icon icon-puzzle"></i> Administration
+            </a>
+                <ul class="nav-dropdown-items">
+
+                    <!--
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'create-teacher' %}">
+                            <i class="nav-icon icon-puzzle"></i> Create Teacher</a>
+                    </li>
+
+-->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'teacher-list' %}">
+                            <i class="nav-icon icon-puzzle"></i> Teacher List</a>
+                    </li>
+
+                    <!--
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'create-student' %}">
+                            <i class="nav-icon icon-puzzle"></i> Create Student</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'student-list' %}">
+                            <i class="nav-icon icon-puzzle"></i> student-list</a>
+                    </li>
+
+                    -->
+                </ul>
+            </li>
+
+
+
+<!--
+
+             <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#">
+              <strong style="color:yellow";><i class="nav-icon icon-puzzle"></i> Search Engine
+            </a> </strong>
+                <ul class="nav-dropdown-items">
+
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'search-teacher' %}">
+                            <i class="nav-icon icon-puzzle"></i> search-teacher</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'search-student' %}">
+                            <i class="nav-icon icon-puzzle"></i> search-student</a>
+                    </li>
+
+                </ul>
+            </li>
+
+
+
+
+ <li class="nav-item nav-dropdown">
+
+              <a class="nav-link" href="{% url 'student-result' %}">
+                 <strong style="color:yellow";><i class="nav-icon icon-puzzle"></i> Result</a></strong>
+
+
+            <li class="nav-item nav-dropdown">
+
+              <a class="nav-link" href="{% url 'login' %}">
+                <i class="nav-icon icon-puzzle"></i> Registration</a>
+        </ul>
+    </nav>
+    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+-->
+
+
+            <li class="nav-item nav-dropdown">
+
+              <a class="nav-link" href="{% url 'search-result' %}">
+                 <strong style="color:yellow";><i class="nav-icon icon-puzzle"></i> Result Publish</a></strong>
+
+
+            <li class="nav-item nav-dropdown">
+
+              <a class="nav-link" href="{% url 'login' %}">
+                <i class="nav-icon icon-puzzle"></i> Registration</a>
+        </ul>
+    </nav>
+    <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+    {% block sidebar %}
+    {% endblock %}
+</div>

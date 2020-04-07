@@ -1,0 +1,4 @@
+{
+	"semester": "4th year 2nd semester",
+	"id" : "CE14001"
+}

@@ -1,0 +1,51 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+
+<div class="col-md-10   m-auto">
+    <h3><button style="color: #C71585;" >Teacher Search Engine</button></h3>
+    <div class="card">
+
+        <div class="card-body">
+            <form action="" method="get" class="form-inline">
+                {{ forms.as_p }}
+                <input class="btn btn-success" type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+</div>
+
+{% if teachers %}
+<div class="card">
+    <div class="card-header">
+        <i class="fa fa-align-justify"></i> Teacher List</div>
+    <div class="card-body">
+        <table class="table table-responsive-sm table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Designation</th>
+                    <th>Mobile</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for teacher in teachers %}
+            <tr>
+                <th scope="row"> {{ forloop.counter }} </th>
+                  <td>{{ teacher.name }}</td>
+                  <td>{{ teacher.designation }}</td>
+                    <td>{{ teacher.mobile}}</td>
+                    <td>{{ teacher.email }}</td>
+
+            </tr>
+        {% endfor %}
+            
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

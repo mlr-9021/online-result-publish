@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    <br><br>
+<body style ="background-color:background: #009FFF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+"></body>
+    <h2 class="text-center">Edit-Registrations Page</h2>
+    <hr>
+    <div class="col-md-6 offset-md-3">
+        <form method="POST" action="{% url 'edit_register' %}">
+            {% csrf_token %}
+            {% if form.errors %}
+                <div class="alert alert-danger" role="alert">
+                    <button type = "button" class="close" data-dismiss = "alert">x</button>
+                    <p>Problem ! try again  </p>
+                </div>
+            {% endif %}
+            {{ form.as_p }}
+            <input type="submit" value="Change Profile" class="btn btn-danger">
+        </form>
+    </div>
+{% endblock %}
