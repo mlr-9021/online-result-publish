@@ -1,1 +1,4 @@
-web: gunicorn inventory_management_system.wsgi
+web: gunicorn mbstu_online_result.wsgi
+
+
+#mbstu_online_result.wsgi.application

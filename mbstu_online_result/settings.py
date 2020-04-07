@@ -15,7 +15,7 @@ SECRET_KEY = 'y#dz-c1h*196kpc&u#w8$a(^f0f242g0!gza4#v7zx(5(@ph0('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -162,3 +163,4 @@ DEFAULT_FROM_EMAIL = 'OTF Team <abdulkadir14015@gmail.com>'
 # #DEFAULT_FROM_EMAIL = 'OTF Team <humyaira2019@gmail.com>'
 
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
