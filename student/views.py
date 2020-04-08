@@ -12,6 +12,7 @@ def search_student(request):
 
     roll = request.GET.get('roll', None)
     session = request.GET.get('session', None)
+
     if roll and session:
         students = StudentProfile.objects.filter(roll=roll, session=session)
 
@@ -30,13 +31,16 @@ def search_student(request):
 
 
 def search_result(request):
+    print("ok")
     forms = SearchResultForm(request.GET or None)
 
     roll= request.GET.get('roll', None)
     semester = request.GET.get('semester', None)
+    print(roll)
+    print(semester)
     if roll and semester:
-        students = Result.objects.filter(roll=roll, semester=semester)
-
+        students = Result.objects.filter(roll = roll).filter(semester__contains =  semester)
+        print(students)
 
         #if roll:
             #students = students.filter(roll=roll)
