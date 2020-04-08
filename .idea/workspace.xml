@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="bfa5b8bf-59c3-4d6b-8fad-0552248b525b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/mbstu_online_result/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mbstu_online_result/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student/search_result.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/search_result.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,11 +75,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mbstu_online_result/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="145">
+              <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_result.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/student/search_result.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-61">
+              <caret line="7" column="61" lean-forward="true" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#h3#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base/navbar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base/sidebar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
             </state>
           </provider>
         </entry>
@@ -147,12 +178,10 @@
         <option value="$PROJECT_DIR$/api/views.py" />
         <option value="$PROJECT_DIR$/api/serializers.py" />
         <option value="$PROJECT_DIR$/student/urls.py" />
-        <option value="$PROJECT_DIR$/templates/student/search_result.html" />
         <option value="$PROJECT_DIR$/student/views.py" />
         <option value="$PROJECT_DIR$/student/forms.py" />
         <option value="$PROJECT_DIR$/student/models.py" />
         <option value="$PROJECT_DIR$/student/admin.py" />
-        <option value="$PROJECT_DIR$/templates/base/sidebar.html" />
         <option value="$PROJECT_DIR$/templates/auth/base.html" />
         <option value="$PROJECT_DIR$/Authenticate/froms.py" />
         <option value="$PROJECT_DIR$/templates/auth/changePassword/passwordReset.html" />
@@ -160,11 +189,13 @@
         <option value="$PROJECT_DIR$/templates/auth/changePassword/password_reset_confirm.html" />
         <option value="$PROJECT_DIR$/templates/auth/changePassword/password_reset_complete.html" />
         <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/templates/student/search_result.html" />
         <option value="$PROJECT_DIR$/mbstu_online_result/settings.py" />
+        <option value="$PROJECT_DIR$/templates/base/sidebar.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="739" />
     <option name="height" value="735" />
@@ -186,6 +217,29 @@
               <item name="mbstu_online_result" type="b2602c69:ProjectViewProjectNode" />
               <item name="mbstu_online_result" type="462c0819:PsiDirectoryNode" />
               <item name="mbstu_online_result" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mbstu_online_result" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mbstu_online_result" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mbstu_online_result" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mbstu_online_result" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mbstu_online_result" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mbstu_online_result" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="log1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mbstu_online_result" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mbstu_online_result" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -253,7 +307,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19345239" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.14880952" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="5" />
@@ -420,13 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/student/search_result.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mbstu_online_result/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -479,20 +526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -598,10 +631,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/student/search_result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-61">
+          <caret line="7" column="61" lean-forward="true" selection-start-line="7" selection-start-column="61" selection-end-line="7" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#h3#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mbstu_online_result/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="145">
+          <caret line="84" column="5" lean-forward="true" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
         </state>
       </provider>
     </entry>
