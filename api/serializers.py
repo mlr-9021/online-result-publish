@@ -11,7 +11,6 @@ class ResultSerializer(serializers.Serializer):
 
 
 # model serializer
-
 class StudentInfoSerializer(serializers.ModelSerializer):
     class Meta:
         model = StudentProfile

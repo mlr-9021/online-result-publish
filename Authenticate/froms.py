@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 
 class RegisterForms(UserCreationForm):
     email = forms.EmailField(label='',widget=forms.TextInput(attrs={"class":'form-control','placeholder':'Enter Emails'}))
-    first_name = forms.CharField(label='',widget=forms.TextInput(attrs={'class':'form-control','placeholder':'Frist Name'}))
+    first_name = forms.CharField(label='',widget=forms.TextInput(attrs={'class':'form-control','placeholder':'First Name'}))
     last_name = forms.CharField(label='',widget=forms.TextInput(attrs={'class':"form-control",'placeholder':'Last Name'}))
 
     class Meta:
@@ -29,7 +29,7 @@ class RegisterForms(UserCreationForm):
 class EditRegisterForms(UserChangeForm):
     email = forms.EmailField(label = "", widget= forms.TextInput(attrs={"class":"form-control","placeholder":"Email Address"}))
     first_name = forms.CharField(label= "",max_length=100,widget= forms.TextInput(attrs={"class":"form-control","placeholder":"First Name"}))
-    last_name = forms.CharField(label= "",max_length=100,widget= forms.TextInput(attrs={"class":"form-control","placeholder":"Lase Name"}))
+    last_name = forms.CharField(label= "",max_length=100,widget= forms.TextInput(attrs={"class":"form-control","placeholder":"Last Name"}))
     password = forms.CharField(label = "", widget= forms.TextInput(attrs={"type":"hidden"}))
     class Meta:
         model =User
@@ -37,7 +37,7 @@ class EditRegisterForms(UserChangeForm):
 
     def __init__(self,*args,**kwargs):
         super(EditRegisterForms, self).__init__(*args,**kwargs)
-        self.fields['username'].widget.attrs.update({"class":"form-control","placeholder":"Usar Name"})
+        self.fields['username'].widget.attrs.update({"class":"form-control","placeholder":"User Name"})
         self.fields['username'].label=""
         self.fields['username'].help_text = ''
 

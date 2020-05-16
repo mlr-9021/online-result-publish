@@ -40,7 +40,7 @@ semester_choice = (
 
 '''
 class Result(models.Model):
-       session = models.CharField(max_length=50)
+       session = models.CharField(max_length=50,unique= True)
        semester = models.CharField(max_length =50)
 
        roll = models.CharField(max_length=10)

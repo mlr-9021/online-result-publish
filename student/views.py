@@ -1,5 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from rest_framework.response import Response
+from django.shortcuts import HttpResponse,redirect
+from django.contrib import messages
 #from django.http import JsonResponse
 from rest_framework.decorators import api_view
 
@@ -15,17 +17,13 @@ def search_student(request):
 
     if roll and session:
         students = StudentProfile.objects.filter(roll=roll, session=session)
-
-
-        #if roll:
-            #students = students.filter(roll=roll)
-        #if session:
-           # students = students.filter(session=session)
-
-
-        context = {'forms': forms, 'students': students}
-        return render(request, 'student/search.html', context)
-
+        print(students)
+        if students:
+            context = {'forms': forms, 'students': students}
+            return render(request, 'student/search.html', context)
+        else:
+            #messages.success(request, "please submit right information")
+            return HttpResponse("rong")
     context = {'forms': forms}
     return render(request, 'student/search.html', context)
 
@@ -42,15 +40,17 @@ def search_result(request):
         students = Result.objects.filter(roll = roll).filter(semester__contains =  semester)
         print(students)
 
-        #if roll:
-            #students = students.filter(roll=roll)
-        #if session:
-           # students = students.filter(session=session)
+        if students:
 
-
-        context = {'forms': forms, 'students': students}
-        return render(request, 'student/search_result.html', context)
-
+            context = {'forms': forms, 'students': students}
+            return render(request, 'student/search_result.html', context)
+        else:
+            students = {'forms': forms,'gpa':"Please Submit Valid ID and Semester Name.Try Again! "}
+            print(students)
+            #context = {'forms': forms, 'students': students}
+            #messages.error(request, "Successfully Created")
+            return render(request, 'student/search_result.html',students)
+            #return HttpResponse("Please submit correct roll no")
     context = {'forms': forms}
     return render(request, 'student/search_result.html', context)
 

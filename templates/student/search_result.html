@@ -12,6 +12,16 @@
         </div>
     </div>
 </div>
+<br>
+<style>
+h2.ex1{
+margin-left:100px;
+margin-right:100px;
+color :red;
+background-color: white;
+}
+</style>
+<h2 class ="ex1"> {{ gpa }} </h2>
 
 {% if students %}
 <div class="card">
@@ -35,9 +45,10 @@
                 <td> {{ student.gpa }} </td>
 
             </tr>
+            {{ gpa }}
         {% endfor %}
             
-
+  {{ gpa }}
         </table>
     </div>
 </div>
