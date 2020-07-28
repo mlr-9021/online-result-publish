@@ -15,7 +15,7 @@ from .forms import SearchStudentForm, StudentProfileForm,SearchResultForm
 
 
 def search_result(request):
-    print("ok")
+    print("Ok")
     forms = SearchResultForm(request.GET or None)
 
     roll= request.GET.get('roll', None)
@@ -30,8 +30,15 @@ def search_result(request):
 
             context = {'forms': forms, 'students': students}
             return render(request, 'student/search_result.html', context)
+        else if len(roll != 7):
+		    students = {'forms': forms,'gpa':"Sorry, Student ID pattern doesn't match.\Try Again! "}
+            print(students)
+            #context = {'forms': forms, 'students': students}
+            #messages.error(request, "Successfully Created")
+            return render(request, 'student/search_result.html',students)
+            #return HttpResponse("Please submit correct roll no")
         else:
-            students = {'forms': forms,'gpa':"Sorry, Student ID and Semester Name Doesn't Match.Try Again! "}
+            students = {'forms': forms,'gpa':"Sorry, Student ID or Semester Name or both doesn't match.\Try Again! "}
             print(students)
             #context = {'forms': forms, 'students': students}
             #messages.error(request, "Successfully Created")
